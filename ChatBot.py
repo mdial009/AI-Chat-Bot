@@ -10,17 +10,21 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import warnings
 import sys
+import datetime
 
 warnings.filterwarnings("ignore")
 
 # Download's The Punkt Package
 nltk.download("punkt", quiet=True)
 
-# Get the Article
-# article = input("Enter A URL: ")
-#Example URl "https://www.mayoclinic.org/diseases-conditions/chronic-kidney-disease/symptoms-causes/syc-20354521"
+# Example URl "https://www.mayoclinic.org/diseases-conditions/chronic-kidney-disease/symptoms-causes/syc-20354521"
 
+# Get the Article
 article = Article(input("Enter A URL: "))
+
+# article.authors()
+# article.publish_date(datetime)
+
 article.download()
 article.parse()
 article.nlp()
@@ -40,7 +44,7 @@ def greeting_response(text):
     text = text.lower()
 
     # Bots Greeting Response
-    bot_greetings = ["howdy", "hi", "hey", "hello", "hola"]
+    bot_greetings = [" howdy", " hi", " hey", " hello", " hola"]
     # Users Greeting
     user_greetings = ["hi", "hey", "hello", "hola", "greetings", "wassup"]
 
