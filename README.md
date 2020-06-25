@@ -1,6 +1,6 @@
 # AI-Chat-Bot
 
-This is a "Smart" Chat Bot Program
+This is a "Smart" Chat Bot Program that allows you to enter a url of a article and lets you ask a question that it then takes and quarries it on the website and brings back anything it can find on that specify thing.
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for testing purposes
